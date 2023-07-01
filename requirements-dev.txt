@@ -7,3 +7,7 @@ pytest
 # FastAPI
 fastapi[all]
 uvicorn[standard]
+
+# Database
+sqlalchemy
+psycopg2-binary
