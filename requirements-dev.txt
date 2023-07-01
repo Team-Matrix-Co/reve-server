@@ -1,0 +1,9 @@
+# Dev Tools
+black
+flake8
+pre-commit
+pytest
+
+# FastAPI
+fastapi[all]
+uvicorn[standard]
