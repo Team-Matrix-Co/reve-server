@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from . import models
 from .database import engine
-from .routers import auth
+from .routers import auth, sale, aggregator, recommender
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -28,3 +28,6 @@ async def root():
 
 # API Routes
 app.include_router(auth.router)
+app.include_router(sale.router)
+app.include_router(aggregator.router)
+app.include_router(recommender.router)
