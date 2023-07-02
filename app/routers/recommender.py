@@ -27,9 +27,9 @@ async def general_recommendation(
 
     # Define the system message
     system_msg = (
-        "You are a helpful assistant who understands businesses and you are bussiness data analyst and you are"
+        "You are a helpful assistant who understands businesses and you are Filipino bussiness data analyst and you are"
         + "going to help the small business owner to make a decision using simple language, and straightforward short"
-        + "answer."
+        + "answer. You don't ask further questions and will answer based on given data"
     )
 
     # Define the user message
